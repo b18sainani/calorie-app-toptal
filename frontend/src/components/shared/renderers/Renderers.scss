@@ -1,0 +1,9 @@
+.gridClickableDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    .fa-check-circle.not-available {
+        color: rgb(139, 139, 139);
+    }
+}

@@ -1,0 +1,23 @@
+@mixin neo-col(){
+    padding: 5px;
+    position: relative;
+    min-height: 1px;
+  }
+
+   @mixin resp-queries($size) {
+    @if $size == sm {
+      @media (max-width: #{$screen-sm-max}) { @content; }
+    } @else if $size == sm-portrait-up {
+      @media (min-width: #{$screen-sm-min}) { @content; }
+    } @else if $size == md-portrait {
+      @media (min-width: #{$screen-md-portrait-min}) { @content; }
+    } @else if $size == md {
+      @media (min-width: #{$screen-md-min}) { @content; }
+    } @else if $size == md-desktop {
+        @media (min-width: #{$screen-md-desktop}) { @content; }
+    } @else if $size == lg {
+      @media (min-width: #{$screen-lg-min}) { @content; }
+    } @else if $size == xl {
+      @media (min-width: #{$screen-xl-min}) { @content; }
+    }
+  }
